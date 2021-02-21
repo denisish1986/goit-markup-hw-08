@@ -1,0 +1,45 @@
+.list {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .link {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .item {
+    position: relative;
+  }
+  .img {
+    display: block;
+  }
+  .button {
+    border-width: 0px;
+    border-style: none;
+  }
+  .container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/overlay.jpg);
+  }
+ 

@@ -1,0 +1,42 @@
+
+.sosiaal-links-team-list {
+  display: inline-flex;
+  margin-top: 16px;
+  &__item{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--costumers-color);
+  
+    transition: background-color var(--transition-duration)
+        var(--transition-timing-function),
+      fill var(--transition-duration) var(--transition-timing-function);
+      &:hover,
+&:focus {
+  background-color: var(--accent-text-color);
+  fill: var(--sometimes-white-text-color);
+}
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+

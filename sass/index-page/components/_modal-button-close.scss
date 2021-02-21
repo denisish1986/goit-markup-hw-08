@@ -1,0 +1,29 @@
+.modal-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--sometimes-white-text-color);
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: var(--sometimes-black-text-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  &:hover {
+    fill: var(--accent-text-color);
+  }
+  &__icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 11px;
+    height: 11px;
+    fill: inherit;
+  }
+}
+

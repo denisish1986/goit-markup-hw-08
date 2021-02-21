@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+  }
+  

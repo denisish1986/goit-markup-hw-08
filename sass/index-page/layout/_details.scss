@@ -1,0 +1,70 @@
+.details-section-container {
+  align-items: center;
+}
+
+.details-section {
+  padding-top: 94px;
+  background-color: var(--sometimes-white-text-color);
+}
+.details-list {
+  display: flex;
+  justify-content: center;
+
+  padding: 0px;
+}
+.container-background-svg {
+  background-color: var(--button-background-color);
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.antenna-link-svg {
+  width: 65px;
+  height: 70px;
+}
+.clock-link-svg {
+  width: 67px;
+  height: 70px;
+}
+.diagram-link-svg {
+  width: 70px;
+  height: 70px;
+}
+.astranaut-link-svg {
+  width: 70px;
+  height: 70px;
+}
+.details-list .details-item + .details-item {
+  margin-left: 30px;
+}
+.details-title {
+  margin-top: 30px;
+  margin-bottom: 0px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titel-text-color);
+}
+.details-title-description {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.details-item {
+    margin-bottom: 0px;
+    max-width: 270px;
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
