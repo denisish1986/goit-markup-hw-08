@@ -1,34 +1,43 @@
+
+
 // UTILS
 
-@import"./utils/variables";
+@import "./utils/variables";
+
 
 // BASE
 
 @import "./base/html-base";
-@import"./base/common";
-
+@import "./base/common";
 
 // COMPONENTS
-@import"./components/logo-webstudio";
-@import"./components/button-hero";
-@import"./components/sosiaal-links-team";
-@import"./components/sosial-links-footer";
-@import"./components/button-footer-subscribe";
-@import"./components/modal-button-submit";
-@import"./components/modal-button-close";
-@import"./components/title";
+@import "./components/logo-webstudio";
+@import "./components/title";
+@import "./components/button-hero";
+@import "./components/modal-button-close";
+@import "./components/modal-button-submit";
+@import "./components/sosiaal-links-team";
+@import "./components/sosial-links-footer";
+@import "./components/button-footer-subscribe";
+
+
+
+
+
 
 // LAYOUT
 
 @import "./layout/header";
 @import "./layout/hero";
+@import "./layout/backdrop";
 @import "./layout/details";
 @import "./layout/specification";
 @import "./layout/team";
 @import "./layout/costumers";
-@import "./layout/backdrop";
-@import "./layout/modal-window";
 @import "./layout/footer";
+@import "./layout/modal-window";
+
+
 
 
 

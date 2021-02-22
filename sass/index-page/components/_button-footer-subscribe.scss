@@ -20,18 +20,20 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+
+    &:focus {
+      border: transparent;
+    }
+
     &__icon {
       display: inline-block;
       position: absolute;
-      content: '';
       width: 24px;
       height: 24px;
       top: 13px;
       right: 29px;
     }
-    &:focus {
-      border: transparent;
-    }
+ 
   }
  
   

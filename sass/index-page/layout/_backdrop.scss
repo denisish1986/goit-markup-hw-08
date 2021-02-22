@@ -11,11 +11,12 @@
 
   transition: opacity var(--transition-duration)
     var(--transition-timing-function);
+ 
 }
- .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
   .backdrop.is-hidden .modal-window {
     opacity: 1;

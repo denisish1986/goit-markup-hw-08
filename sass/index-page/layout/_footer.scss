@@ -1,100 +1,88 @@
 .footer {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  
-    color: var(--sometimes-white-text-color);
-    background-color: var(--background-color-footer-section-hero);
-  }
-  
-  .container-footer {
-    display: inline-flex;
-    align-items: baseline;
-  }
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  color: var(--sometimes-white-text-color);
+  background-color: var(--background-color-footer-section-hero);
+}
+
+.container-footer {
+  display: inline-flex;
+  align-items: baseline;
+}
 
 .footer-info-container {
-    margin-right: 70px;
-    min-width: 230px;
-  }
-  .address {
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-  
-    letter-spacing: 0.03em;
-  }
-  
-  .address-contact-list {
+  margin-right: 70px;
+  min-width: 230px;
+}
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+
+  letter-spacing: 0.03em;
+}
+
+.address-contact-list {
+  margin-top: 9px;
+  padding-left: 0px;
+  &__item {
     margin-top: 9px;
-    padding-left: 0px;
   }
-  .contact-telmail-link {
-    margin-top: 9px;
-  }
-  
-  .address-text-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: var(--sometimes-white-text-color);
-  }
-  .footer-contacts-mail:hover,
-  .footer-contacts-mail:focus {
-    color: var(--accent-text-color);
-  }
-  .footer-contacts-tel:hover,
-  .footer-contacts-tel:focus {
-    color: var(--accent-text-color);
-  }
-  
-  .footer-contacts-tel,
-  .footer-contacts-mail {
+  &__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--rgba-color-for-tel-mail);
-    transition: color var(--transition-duration) var(--transition-timing-function);
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
   }
-  .footer-contacts-tel:hover .footer-contacts-tel:focus {
+  &__link:hover,
+  &__link:focus {
     color: var(--accent-text-color);
   }
-  
-  .footer-contacts-mail:hover .footer-contacts-mail:focus {
-    color: var(--accent-text-color);
-  }
+}
+
+.address-text-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--sometimes-white-text-color);
+}
 
 .form-footer {
-    display: inline-flex;
-  }
-  .form-subscribe-container {
-    display: inline-block;
-    flex-direction: row;
-    margin-left: 154px;
-    width: 570px;
-    height: 86px;
-  }
-  .subscribe-titel {
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-  .footer-input-emal {
-    width: 358px;
-    height: 50px;
-    margin-top: 20px;
-    margin-right: 12px;
-    padding: 15px 16px;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: var(--background-color-footer-section-hero);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-  }
+  display: inline-flex;
+}
+.form-subscribe-container {
+  display: inline-block;
+  flex-direction: row;
+  margin-left: 154px;
+  width: 570px;
+  height: 86px;
+}
+.subscribe-titel {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-input-email {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--background-color-footer-section-hero);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}

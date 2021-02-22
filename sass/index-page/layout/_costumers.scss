@@ -6,28 +6,34 @@
 .costumers-list {
   display: flex;
   margin-top: 50px;
+  &__item{
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    align-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: var(--costumers-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function),
+      border var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:focus {
+      fill: var(--accent-text-color);
+      border: 1px solid var(--accent-text-color);
+    }
+  }
+  &__icon-unic{
+    width: 50%;
+    height: 80%;
+  }
 }
 
-.costumers-link:not(:last-child) {
-  margin-right: 30px;
-}
 
-.costumers-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  align-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: var(--costumers-color);
-  transition: fill var(--transition-duration) var(--transition-timing-function),
-    border var(--transition-duration) var(--transition-timing-function);
-}
 
-.costumers-button:hover,
-.costumers-button:focus {
-  fill: var(--accent-text-color);
-  border: 1px solid var(--accent-text-color);
-}
