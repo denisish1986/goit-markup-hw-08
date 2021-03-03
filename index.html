@@ -23,20 +23,21 @@
     <!--Main header-->
     <header class="header">
       <div class="header-container container">
+
         <nav class="header-navigation link">
           <a href="./index.html " class="logo link">
             Web<Studio class="logo-studio-part-header">Studio</span></a
           >
 
-          <ul class="page-nav list">
-            <li class="item">
-              <a class="nav-link current link" href="./index.html"> Студия </a>
+          <ul class="page-nav-list list">
+            <li class="page-nav-list__item">
+              <a class="page-nav-list__link current link" href="./index.html"> Студия </a>
             </li>
-            <li class="item">
-              <a class="nav-link  link" href="./Portfolio.html">Портфолио</a>
+            <li class="page-nav-list__item">
+              <a class="page-nav-list__link  link" href="./Portfolio.html">Портфолио</a>
             </li>
-            <li class="item">
-              <a class="nav-link link" href="">Контакты </a>
+            <li class="page-nav-list__item">
+              <a class="page-nav-list__link link" href="">Контакты </a>
             </li>
           </ul>
         </nav>
@@ -44,7 +45,7 @@
           <li class="contact-link-list__item item">
             <a class="contact-link-list__link link" href="mailto:info@devstudio.com"
               ><svg class="contact-link-list__icon">
-                <use href="./images/sprite.svg#icon-envelope"></use>
+                <use href="./images/sprite.svg#icon-envelope-tablet"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -52,12 +53,18 @@
           <li class="contact-link-list__item item">
             <a class="contact-link-list__link link" href="tel:+380961111111">
               <svg class="contact-link-list__icon">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
+                <use href="./images/sprite.svg#icon-smartphone-tablet"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button class="header-mobile-menu-button" type="button">
+          <svg class="header-mobile-menu-button__icon">
+            <use href="./images/sprite.svg#icon-mobile-menu"></use>
+
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -77,62 +84,57 @@
 
       <!--DETAILS SECTION-->
       <section class="details-section">
-        <div class="details-list-container container">
+        <div class="details-container container">
           <!-- <h2>titel</h2> -->
           <ul class="details-list list">
-            <li class="details-item">
-              <div class="icon-container">
-                <svg class="antenna-icon-svg">
-                  <use href="./images/sprite.svg#icon-antenna-1"  width="65px"
-                  height="70px"></use>
+            <li class="details-list__item">
+              <div class="details-list-item-container">
+                <svg class="details-list-item-container__icon">
+                  <use href="./images/sprite.svg#icon-antenna-1"></use>
                 </svg>
               </div>
 
-              <h3 class="details-title">Внимание к деталям</h3>
-              <p class="details-title-description">
+              <h3 class="details-list-item-container__title">Внимание к деталям</h3>
+              <p class="details-list-item-container__description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="details-item">
-              <div class="icon-container">
-                <svg class="clock-icon-svg"  width="67px"
-                height="70px">
+            <li class="details-list__item">
+              <div class="details-list-item-container">
+                <svg class="details-list-item-container__icon">
                   <use href="./images/sprite.svg#icon-clock-1"></use>
                 </svg>
               </div>
 
-              <h3 class="details-title">Пунктуальность</h3>
-              <p class="details-title-description">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+              <h3 class="details-list-item-container__title">Пунктуальность</h3>
+              <p class="details-list-item-container__description">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
 
-            <li class="details-item">
-              <div class="icon-container">
-                <svg class="clock-icon-svg">
-                  <use href="./images/sprite.svg#icon-diagram-1" width="70px"
-                  height="70px"></use>
+            <li class="details-list__item">
+              <div class="details-list-item-container">
+                <svg class="details-list-item-container__icon">
+                  <use href="./images/sprite.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="details-title">Планирование</h3>
-              <p class="details-title-description">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+
+              <h3 class="details-list-item-container__title">Планирование</h3>
+              <p class="details-list-item-container__description">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="details-item">
-              <div class="icon-container">
-                <svg class="astranaut-icon-svg"  width="70px"
-                height="70px">
+            <li class="details-list__item">
+              <div class="details-list-item-container">
+                <svg class="details-list-item-container__icon">
                   <use href="./images/sprite.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="details-title">Современные технологии</h3>
-              <p class="details-title-description">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+
+              <h3 class="details-list-item-container__title">Современные технологии</h3>
+              <p class="details-list-item-container__description">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
@@ -145,19 +147,35 @@
         <div class="container-specification container">
           <h2 class="section-specification-title title">Чем мы занимаемся</h2>
           <ul class="specification-list list">
-            <li class="specification-item item">
-              <img
+            <li class="specification-list__item item">
+
+            <picture >
+            
+              <source srcset="" media="(min-width: 1200px)"
+              type="image/webp">
+                <source srcset="" media="(min-width: 1200px)">
+
+                  <source srcset="" media="(min-width: 768px)"
+                  type="image/webp">
+              <source srcset="" media="(min-width: 768px)">
+                <source srcset="" media="(min-width: 480px)"
+              type="image/webp">
+                <source srcset="" media="(min-width: 480px)"
+              
+              type="image/webp">
+
+                <img
                 class="specification-img img"
-                src="./images/img-1.jpg"
+                src="./images/foto-mobile/team-ighor-x1.jpg"
                 alt="Десктопные приложения"
-                width="370"
-                height="294"
               />
+            </picture>
+          
               <div class="specification-description">
                 <p class="specification-description-text">Десктопные приложения</p>
               </div>
             </li>
-            <li class="specification-item item">
+            <li class="specification-list__item item">
               <img
                 class="specification-img img"
                 src="./images/img-2.jpg"
@@ -169,7 +187,7 @@
                 <p class="specification-description-text">Мобильные приложения</p>
               </div>
             </li>
-            <li class="specification-item item">
+            <li class="specification-list__item item">
               <img
                 class="specification-img img"
                 src="./images/img-3.jpg"
@@ -191,14 +209,17 @@
         <div class="container-team-section container">
           <h2 class="team-section-title title">Наша команда</h2>
           <ul class="team-section-list list">
-            <li class="team-item list">
-              <img
-                class="developer img"
-                src="./images/photo-ighor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+            <li class="team-section-list__item list">
+              <picture  >
+                <source srcset="" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/team-tablet-ighor-x1 x1, ./images/tablet/team-tablet-ighor-@2 x2" media="(min-width: 768px)">
+                  <img
+                  class="specification-img img"
+                  src="./images/foto-mobile/team-ighor-x1.jpg"
+                  alt="Десктопные приложения"
+                />
+              </picture>
+         
               <div class="description-developer-container">
                 <h3 class="name-developer">Игорь Демьяненко</h3>
                 <p class="description-developer" lang="en">Product Designer</p>
@@ -243,14 +264,18 @@
               </div>
             </li>
 
-            <li class="team-item list">
-              <img
-                class="developer img"
-                src="./images/photo-olgha.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+            <li class="team-section-list__item list">
+              <picture >
+                <source srcset="./images/desktop/team-tablet-ighor-x1 x1, ./images/tablet/team-tablet-ighor-@2 x2" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/desktop/team-tablet-ighor-x1 x1, ./images/tablet/team-tablet-ighor-@2 x2" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/team-tablet-ighor-x1 x1, ./images/tablet/team-tablet-ighor-@2 x2" media="(min-width: 768px)">
+                  <img
+                  class="specification-img img"
+                  src="./images/foto-mobile/team-olgha-x1.jpg"
+                  alt="Десктопные приложения"
+                />
+              </picture>
+  
               <div class="description-developer-container">
                 <h3 class="name-developer">Ольга Репина</h3>
                 <p class="description-developer" lang="en">
@@ -297,14 +322,16 @@
               </div>
             </li>
 
-            <li class="team-item list">
-              <img
-                class="developer img"
-                src="./images/photo-nikolay.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+            <li class="team-section-list__item list">
+              <picture >
+                <source srcset="" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/team-tablet-ighor-x1 x1, ./images/tablet/team-tablet-ighor-@2 x2" media="(min-width: 768px)">
+                  <img
+                  class="specification-img img"
+                  src="./images/foto-mobile/team-nikolay-x1.jpg"
+                  alt="Десктопные приложения"
+                />
+              </picture>
               <div class="description-developer-container">
                 <h3 class="name-developer">Николай Тарасов</h3>
                 <p class="description-developer" lang="en">Marketing</p>
@@ -349,14 +376,16 @@
               </div>
             </li>
 
-            <li class="team-item list">
-              <img
-                class="developer img"
-                src="./images/photo-mikhayl.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+            <li class="team-section-list__item list">
+              <picture >
+                <source srcset="" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/team-tablet-ighor-x1 x1, ./images/tablet/team-tablet-ighor-@2 x2" media="(min-width: 768px)">
+                  <img
+                  class="specification-img img"
+                  src="./images/foto-mobile/team-mihail-x1.jpg"
+                  alt="Десктопные приложения"
+                />
+              </picture>
               <div class="description-developer-container">
                 <h3 class="name-developer">Михаил Ермаков</h3>
                 <p class="description-developer" lang="en">UI Designer</p>
@@ -458,7 +487,7 @@
     <!--Container footer -->
 
     <footer class="footer">
-      <div class="container-footer container">
+      <div class="footer-container container">
         <!-- FOOTER INFO CONTAINER -->
         <div class="footer-info-container">
           <a class="logo link" href="./index.html">
@@ -529,14 +558,12 @@
               placeholder="E-mail"
               required
             />
-            <button class="subscribe-button-footer" type="submit">
+            <button class="footer-subscribe-button" type="submit">
               Подписаться
 
-              <svg class="subscribe-button-footer__icon">
+              <svg class="footer-subscribe-button__icon">
                 <use
-                  href="./images/modal-window-icon.svg#icon-icon-send"
-                  width="24"
-                  height="24"
+                  href="./images/sprite.svg#icon-icon-send"
                 ></use>
               </svg>
             </button>

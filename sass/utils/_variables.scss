@@ -1,4 +1,5 @@
 :root {
+    --sosiaal-link-background-background: rgba(255, 255, 255, 0.1);
     --standart-black-color: #000000;
     --transition-duration: 250ms;
     --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -19,4 +20,11 @@
     --border-color-for-header: #ececec;
     --costumers-color: #afb1b8;
   }
+
+  @mixin font ($fs:15px, $fw:400, $lh:24px){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh/$fs;
+    }
+  
   

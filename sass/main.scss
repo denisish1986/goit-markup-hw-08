@@ -1,43 +1,31 @@
-
-
 // UTILS
 
 @import "./utils/variables";
 
-
 // BASE
-
-@import "./base/html-base";
 @import "./base/common";
-
-// COMPONENTS
-@import "./components/logo-webstudio";
-@import "./components/title";
-@import "./components/button-hero";
-@import "./components/modal-button-close";
-@import "./components/modal-button-submit";
-@import "./components/sosiaal-links-team";
-@import "./components/sosial-links-footer";
-@import "./components/button-footer-subscribe";
-
-
-
-
-
-
+@import "./base/html-base";
 // LAYOUT
-
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/backdrop";
-@import "./layout/details";
-@import "./layout/specification";
-@import "./layout/team";
-@import "./layout/costumers";
-@import "./layout/footer";
-@import "./layout/modal-window";
-
-
-
+@import "./index-page/layout/header";
+@import "./index-page/layout/backdrop";
+@import "./index-page/layout/team";
+@import "./index-page/layout/container";
+@import "./index-page/layout/modal-window";
+@import "./index-page/layout/hero";
+@import "./index-page/layout/footer";
+@import "./index-page/layout/specification";
+@import "./index-page/layout/costumers";
+@import "./index-page/layout/details";
+// COMPONENTS
+@import "./index-page/components/_header-navi-button-mobile";
+@import "./index-page/components/button-footer-subscribe";
+@import "./index-page/components/button-hero";
+@import "./index-page/components/current";
+@import "./index-page/components/logo-webstudio";
+@import "./index-page/components/modal-button-close";
+@import "./index-page/components/modal-button-submit";
+@import "./index-page/components/sosiaal-links-team";
+@import "./index-page/components/sosial-links-footer";
+@import "./index-page/components/title";
 
 

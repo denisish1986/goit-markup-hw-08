@@ -24,20 +24,21 @@
 
     <header class="header">
       <div class="header-container container">
+
         <nav class="header-navigation link">
           <a href="./index.html " class="logo link">
             Web<Studio class="logo-studio-part-header">Studio</span></a
           >
 
-          <ul class="page-nav list">
-            <li class="item">
-              <a class="nav-link  link" href="./index.html"> Студия </a>
+          <ul class="page-nav-list list">
+            <li class="page-nav-list__item">
+              <a class="page-nav-list__link  link" href="./index.html"> Студия </a>
             </li>
-            <li class="item">
-              <a class="nav-link current link" href="./Portfolio.html">Портфолио</a>
+            <li class="page-nav-list__item">
+              <a class="page-nav-list__link current link" href="./Portfolio.html">Портфолио</a>
             </li>
-            <li class="item">
-              <a class="nav-link link" href="">Контакты </a>
+            <li class="page-nav-list__item">
+              <a class="page-nav-list__link link" href="">Контакты </a>
             </li>
           </ul>
         </nav>
@@ -45,7 +46,7 @@
           <li class="contact-link-list__item item">
             <a class="contact-link-list__link link" href="mailto:info@devstudio.com"
               ><svg class="contact-link-list__icon">
-                <use href="./images/sprite.svg#icon-envelope"></use>
+                <use href="./images/sprite.svg#icon-envelope-tablet"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -53,12 +54,18 @@
           <li class="contact-link-list__item item">
             <a class="contact-link-list__link link" href="tel:+380961111111">
               <svg class="contact-link-list__icon">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
+                <use href="./images/sprite.svg#icon-smartphone-tablet"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button class="header-mobile-menu-button" type="button">
+          <svg class="header-mobile-menu-button__icon">
+            <use href="./images/sprite.svg#icon-mobile-menu"></use>
+
+          </svg>
+        </button>
       </div>
     </header>
 
