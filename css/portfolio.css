@@ -23,18 +23,6 @@
   border-radius: 4px;
 }
 
-.products {
-  position: relative;
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-.section-product-list {
-  display: flex;
-  justify-content: center;
-  padding: 0px;
-}
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -125,5 +113,17 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--sometimes-white-text-color);
+}
+
+.products {
+  position: relative;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.section-product-list {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
 }
 /*# sourceMappingURL=portfolio.css.map */

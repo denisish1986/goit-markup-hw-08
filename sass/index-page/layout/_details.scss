@@ -7,8 +7,7 @@
   @media screen and (min-width: 768px) {
     width: 100%;
     max-width: 1199px;
-    min-width: 481px;
-    height: 100%;
+    min-width: 768px;
     padding-bottom: 60px;
   }
   @media screen and (min-width: 1300px) {
@@ -16,7 +15,8 @@
     max-width: 1600px;
     min-width: 1300px;
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0px;
+  
   }
 }
 
@@ -38,6 +38,9 @@
     max-width: 1600px;
   }
 }
+
+
+
 
 .details-list {
   @media screen and(max-width: 479px) {

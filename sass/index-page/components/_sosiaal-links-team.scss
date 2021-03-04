@@ -1,52 +1,54 @@
-.sosiaal-links-team-list {
-  
-  display: flex;
-  justify-content: center;
-  width: 100%;
- 
-  & {
-    :not(:last-child) {
-      margin-right: 10px;
-    }
-  }
-  &__item{
+  .sosiaal-links-team-list {
+    margin-top: 16px;
+
     display: flex;
-    width: 44px;
-    height: 44px;
-  }
-  &__link {
-    display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    fill: var(--costumers-color);
-    transition: fill var(--transition-duration)
-        var(--transition-timing-function),
-      background-color var(--transition-duration)
-        var(--transition-timing-function);
-
-    &:hover,
-    &:focus {
-      background-color: var(--accent-text-color);
-      fill: var(--sometimes-white-text-color);
+  
+    & {
+      :not(:last-child) {
+        margin-right: 10px;
+      }
     }
-  }
-  &__icon {
-    display: flex;
-    width: 20px;
-    height: 20px;
-  }
-}
+    &__item{
+      display: flex;
+      width: 44px;
+      height: 44px;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      fill: var(--costumers-color);
+      transition: fill var(--transition-duration)
+          var(--transition-timing-function),
+        background-color var(--transition-duration)
+          var(--transition-timing-function);
 
+      &:hover,
+      &:focus {
+        background-color: var(--accent-text-color);
+        fill: var(--sometimes-white-text-color);
+      }
+    }
+    &__icon {
+      display: flex;
+      width: 20px;
+      height: 20px;
+    }
+
+
+  }
 // .sosiaal-links-team-list {
 //   display: inline-flex;
 //   margin-top: 16px;
 //   &__item {
 //     display: flex;
 //     justify-content: center;
-//     background-color: rgba(255, 255, 255, 0.1);
+//     jbackground-color: rgba(255, 255, 255, 0.1);
 //     &:not(:last-child) {
 //       margin-right: 10px;
 //     }
