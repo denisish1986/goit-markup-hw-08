@@ -1,0 +1,47 @@
+.mobail-menu {
+    display: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  height: 796px;
+  padding: 48px 40px;
+  background-color: var(--mobail-menu-background-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mobail-navigation {
+  &__link {
+    @include font(40px, 500, 47px);
+    color: var(--sometimes-black-text-color);
+    letter-spacing: 0.02em;
+  }
+}
+
+.mobail-menu-contact {
+  &__link-tel {
+    color: var(--accent-text-color);
+    @include font(34px, 500, 40px);
+    letter-spacing: 0.02em;
+  }
+  &__link-mail {
+    color: var(--primary-text-color);
+    @include font(24px, 500, 28px);
+
+    letter-spacing: 0.02em;
+  }
+}
+
+.mobail-sosiaal {
+  outline: 1px solid red;
+  display: flex;
+
+  &__link {
+    color: var(--accent-text-color);
+    @include font(18px, 500, 22px);
+    letter-spacing: 0.02em;
+    border-right: 1px solid var(--border-sosiaal-mobail);
+  }
+}

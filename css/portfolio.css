@@ -59,61 +59,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.seciton-products {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-top: 60px;
-}
-
-@media screen and (min-width: 480px) {
-  .seciton-products {
-    min-width: 260px;
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .seciton-products {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .seciton-products {
-    width: 1600px;
-    padding-top: 94px;
-  }
-}
-
-.products {
-  align-items: center;
-  width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .products {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .products {
-    width: 768px;
-    max-width: 768px;
-    justify-content: center;
-    padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .products {
-    justify-content: center;
-    width: 1300px;
-    max-width: 1600px;
-  }
-}
-
 .portfolio-product-list {
   display: flex;
   flex-wrap: wrap;
@@ -205,7 +150,6 @@ body {
     max-width: 1600px;
     width: 1300px;
     margin-top: 50px;
-    outline: 2px solid green;
   }
 }
 
@@ -235,7 +179,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .portfolio-list__item {
-    width: calc((100%-2*30)/2);
+    width: calc((100%-2 * 30) / 2);
     margin: 15px;
     max-width: 354px;
   }
@@ -327,7 +271,64 @@ body {
   overflow: hidden;
 }
 
+.seciton-products {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .seciton-products {
+    min-width: 260px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .seciton-products {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .seciton-products {
+    width: 1600px;
+    padding-top: 94px;
+  }
+}
+
+.products {
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .products {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    width: 768px;
+    max-width: 768px;
+    justify-content: center;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .products {
+    justify-content: center;
+    width: 1300px;
+    max-width: 1600px;
+  }
+}
+
 :root {
+  --border-sosiaal-mobail:rgba(33, 33, 33, 0.2);
+  --mobail-menu-background-color: #ffffff;
   --sosiaal-link-background-background: rgba(255, 255, 255, 0.1);
   --standart-black-color: #000000;
   --transition-duration: 250ms;

@@ -1,4 +1,6 @@
 :root {
+  --border-sosiaal-mobail:rgba(33, 33, 33, 0.2);
+  --mobail-menu-background-color: #ffffff;
   --sosiaal-link-background-background: rgba(255, 255, 255, 0.1);
   --standart-black-color: #000000;
   --transition-duration: 250ms;
@@ -248,7 +250,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .backdrop {
-    display: none;
+    display: flex;
   }
 }
 
@@ -478,10 +480,48 @@ body {
   max-height: 40px;
 }
 
+@media screen and (max-width: 1299px) and (min-width: 1px) {
+  .modal-window__title {
+    min-width: 370px;
+    max-height: 60px;
+  }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 480px) {
+  .modal-window__title {
+    min-width: 370px;
+    max-height: 60px;
+  }
+}
+
 @media screen and (max-width: 1299px) and (min-width: 768px) {
   .modal-window__title {
     min-width: 370px;
     max-height: 60px;
+  }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 1px) {
+  .modal-window {
+    top: 0%;
+    left: -5%;
+    transform: translate(-50% -50%);
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 480px) {
+  .modal-window {
+    top: -2%;
+    left: 2%;
+    transform: translate(-50% -50%);
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    transform: scale(0.8);
   }
 }
 
@@ -668,13 +708,25 @@ body {
   left: 0%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1px) {
+  .form-fild-container .form-fild__polycy-label a {
+    min-width: 346px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .form-fild-container .form-fild__polycy-label a {
     min-width: 346px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .form-fild-container .form-fild__polycy-label a {
+    min-width: 346px;
+  }
+}
+
+@media screen and (min-width: 1299px) and (min-width: 1px) {
   .form-fild-container .form-fild__polycy-label {
     min-width: 380px;
     font-size: 12px;
@@ -685,9 +737,45 @@ body {
   }
 }
 
+@media screen and (min-width: 1299px) and (min-width: 480px) {
+  .form-fild-container .form-fild__polycy-label {
+    min-width: 380px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    margin-left: 0px;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1299px) and (min-width: 768px) {
+  .form-fild-container .form-fild__polycy-label {
+    min-width: 380px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    margin-left: 0px;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 1px) {
+  .form-fild-container {
+    text-align: start;
+    min-width: 370px;
+  }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 480px) {
+  .form-fild-container {
+    text-align: start;
+    min-width: 370px;
+  }
+}
+
 @media screen and (max-width: 1299px) and (min-width: 768px) {
   .form-fild-container {
-    text-align: center;
+    text-align: start;
     min-width: 370px;
   }
 }
@@ -707,20 +795,19 @@ body {
   background-size: cover;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1300px) and (min-width: 480px) {
   .section-hero {
-    width: 480px;
+    width: 100%;
+    padding-top: 118px;
+    padding-bottom: 198px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1300px) and (min-width: 768px) {
   .section-hero {
     padding-top: 118px;
-    padding-bottom: 118px;
+    padding-bottom: 198px;
     width: 100%;
-    max-width: 1199px;
-    min-width: 481px;
-    height: 400px;
     background: rgba(47, 48, 58, 0.4);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/foto-tablet/hero-tablet-x1.jpg);
     background-repeat: no-repeat;
@@ -731,11 +818,12 @@ body {
 
 @media screen and (min-width: 1300px) {
   .section-hero {
+    display: flex;
+    justify-content: center;
     padding-top: 200px;
     padding-bottom: 280px;
-    width: 100%;
-    max-width: 1600px;
     height: 600px;
+    max-width: 1600px;
     background: rgba(47, 48, 58, 0.4);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/foto-desktop/hero-desktop-x1.jpg);
     background-repeat: no-repeat;
@@ -753,23 +841,20 @@ body {
 
 @media screen and (min-width: 480px) {
   .hero-container {
-    width: 480px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-container {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1300px) {
   .hero-container {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
   }
 }
 
@@ -785,21 +870,17 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 481px) and (min-width: 480px) {
+@media screen and (max-width: 1299px) and (min-width: 480px) {
   .hero-title {
-    min-width: 480px;
-    min-height: 84px;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1299px) and (min-width: 768px) {
   .hero-title {
-    min-width: 360px;
-    max-width: 1299px;
-    padding-left: 143px;
-    padding-right: 143px;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }
 
@@ -811,10 +892,9 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    min-width: 696px;
-    max-width: 1600px;
-    padding-left: 394px;
-    padding-right: 394px;
+    padding-right: 452px;
+    padding-left: 452px;
+    width: 100%;
   }
 }
 
@@ -1410,6 +1490,58 @@ body {
   line-height: 1.71429;
 }
 
+.mobail-menu {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  height: 796px;
+  padding: 48px 40px;
+  background-color: var(--mobail-menu-background-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mobail-navigation__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.175;
+  color: var(--sometimes-black-text-color);
+  letter-spacing: 0.02em;
+}
+
+.mobail-menu-contact__link-tel {
+  color: var(--accent-text-color);
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17647;
+  letter-spacing: 0.02em;
+}
+
+.mobail-menu-contact__link-mail {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16667;
+  letter-spacing: 0.02em;
+}
+
+.mobail-sosiaal {
+  outline: 1px solid red;
+  display: flex;
+}
+
+.mobail-sosiaal__link {
+  color: var(--accent-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22222;
+  letter-spacing: 0.02em;
+  border-right: 1px solid var(--border-sosiaal-mobail);
+}
+
 .header-mobile-menu-button {
   width: 40px;
   height: 40px;
@@ -1583,6 +1715,20 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 1px) {
+  .submit-button-container__button {
+    max-width: 200px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .submit-button-container__button {
+    max-width: 200px;
+    height: 50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .submit-button-container__button {
     max-width: 200px;
@@ -1750,5 +1896,35 @@ body {
     line-height: 1.16667;
     letter-spacing: 0.03em;
   }
+}
+
+.mobail-menu-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--sometimes-white-text-color);
+  cursor: pointer;
+  fill: var(--sometimes-black-text-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.mobail-menu-button-close:hover {
+  fill: var(--accent-text-color);
+}
+
+.mobail-menu-button-close__icon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  fill: inherit;
 }
 /*# sourceMappingURL=main.css.map */

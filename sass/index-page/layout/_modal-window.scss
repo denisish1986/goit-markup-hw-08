@@ -28,27 +28,70 @@
     margin-bottom: 0px;
     min-width: 448px;
     max-height: 40px;
+
+
     @media screen and (max-width: 1299px) {
+      @media screen and (min-width: 1px) {
+        min-width: 370px;
+        max-height: 60px;
+      }
+  
+      @media screen and (min-width: 480px) {
+        min-width: 370px;
+        max-height: 60px;
+      }
+  
       @media screen and (min-width: 768px) {
         min-width: 370px;
         max-height: 60px;
       }
     }
+
+
   }
+
+
+
 
   @media screen and (max-width: 1299px) {
-   @media screen and (min-width: 768px) {
-    top: 0%;
-    left: 20%;
-    transform: translate(-50% -50%);
 
-    width: 450px;
-    height: 609px;
-    padding: 40px;
-    transform: scale(0.7);
+
+
+    @media screen and (min-width: 1px) {
+      top: 0%;
+      left: -5%;
+      transform: translate(-50% -50%);
+  
+      width: 450px;
+      height: 609px;
+      padding: 40px;
+      transform: scale(0.7);
+    }
+
+
+    @media screen and (min-width: 480px) {
+      top: -2%;
+      left: 2%;
+      transform: translate(-50% -50%);
+  
+      width: 450px;
+      height: 609px;
+      padding: 40px;
+      transform: scale(0.8);
+    }
+    @media screen and (min-width: 768px) {
+      top: 0%;
+      left: 20%;
+      transform: translate(-50% -50%);
+  
+      width: 450px;
+      height: 609px;
+      padding: 40px;
+      transform: scale(0.7);
+    }
   }
-  }
- 
+
+  
 }
 
 .form-fild-container {
@@ -215,30 +258,70 @@
         letter-spacing: 0.03em;
         top: 0%;
         left: 0%;
+
+        @media screen and (min-width: 1px) {
+          min-width: 346px;
+        }
+
+        @media screen and (min-width: 480px) {
+          min-width: 346px;
+        }
+
         @media screen and (min-width: 768px) {
           min-width: 346px;
         }
       }
-      @media screen and (min-width: 768px) {
-        min-width: 380px;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.03em;
-        margin-left: 0px;
-        text-align: start;
+
+      @media screen and (min-width: 1299px) {
+        @media screen and (min-width: 1px) {
+          min-width: 380px;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.03em;
+          margin-left: 0px;
+          text-align: start;
+        }
+
+        @media screen and (min-width: 480px) {
+          min-width: 380px;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.03em;
+          margin-left: 0px;
+          text-align: start;
+        }
+
+        @media screen and (min-width: 768px) {
+          min-width: 380px;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.03em;
+          margin-left: 0px;
+          text-align: start;
+        }
       }
     }
   }
 
   @media screen and (max-width: 1299px) {
-   @media screen and (min-width: 768px) {
-    text-align: center;
+    @media screen and (min-width: 1px) {
+      text-align: start;
 
-    min-width: 370px;
-  }
-  }
+      min-width: 370px;
+    }
 
- 
+    @media screen and (min-width: 480px) {
+      text-align: start;
+
+      min-width: 370px;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+
+      min-width: 370px;
+    }
+  }
 }
 
 // .modal-window {

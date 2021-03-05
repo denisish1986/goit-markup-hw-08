@@ -1,0 +1,29 @@
+.mobail-menu-button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--sometimes-white-text-color);
+    cursor: pointer;
+    
+    fill: var(--sometimes-black-text-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+    &:hover {
+      fill: var(--accent-text-color);
+    }
+    &__icon {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 19px;
+      height: 19px;
+      fill: inherit;
+    }
+  }
+  

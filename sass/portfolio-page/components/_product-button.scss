@@ -1,44 +1,4 @@
-.seciton-products {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-top: 60px;
 
-  @media screen and (min-width: 480px) {
-    min-width: 260px;
-    max-width: 768px;
-    
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    
-  }
-  @media screen and (min-width: 1300px) {
-    width: 1600px;
-    padding-top: 94px;
-  }
-}
-
-.products {
-  align-items: center;
-  width: 100%;
-  
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    max-width: 768px;
-    justify-content: center;
-    padding-top: 60px;
-  }
-
-  @media screen and (min-width: 1300px) {
-    justify-content: center;
-    width: 1300px;
-    max-width: 1600px;
-  }
-}
 
 .portfolio-product-list {
   display: flex;
