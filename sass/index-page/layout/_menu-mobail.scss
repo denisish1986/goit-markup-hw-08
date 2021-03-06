@@ -1,26 +1,62 @@
 .mobail-menu {
-    display: none;
+    
   position: absolute;
   top: 0%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-100%);
   width: 100%;
   max-width: 480px;
   height: 796px;
   padding: 48px 40px;
   background-color: var(--mobail-menu-background-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  
+z-index: 1;
+  
+}
+
+
+
+
+.mobail-menu.is-open{
+
+  transform:  translateX(-50%) translateY(0%);
 }
 
 .mobail-navigation {
-  &__link {
+
+  :not(:first-child){
+    margin-top: 36px;
+  }
+ 
+  &__link{
     @include font(40px, 500, 47px);
     color: var(--sometimes-black-text-color);
     letter-spacing: 0.02em;
+transition: color var(--transition-duration) var(--transition-timing-function);
+  
+    &:hover,
+    &:focus{
+      color: var(--accent-text-color);
+    }
   }
+    
+  
 }
 
+
+
 .mobail-menu-contact {
+
+
+  .mobail-menu-contact__item{
+    margin-top: 302px;
+  }
+
+.mobail-menu-contact__item + .item{
+  margin-top: 32px;
+}
+
   &__link-tel {
     color: var(--accent-text-color);
     @include font(34px, 500, 40px);
@@ -35,13 +71,35 @@
 }
 
 .mobail-sosiaal {
-  outline: 1px solid red;
+
   display: flex;
 
+&__item{
+  margin-top: 64px;
+}
+
+
+
+
   &__link {
+   
+   padding: 10px;
     color: var(--accent-text-color);
     @include font(18px, 500, 22px);
     letter-spacing: 0.02em;
     border-right: 1px solid var(--border-sosiaal-mobail);
   }
+}
+
+// ============примерчик==============
+
+.backdrop.is-hidden .modal-window {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }

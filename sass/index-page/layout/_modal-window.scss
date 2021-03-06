@@ -59,7 +59,7 @@
 
     @media screen and (min-width: 1px) {
       top: 0%;
-      left: -5%;
+      left: 0%;
       transform: translate(-50% -50%);
   
       width: 450px;
@@ -70,8 +70,8 @@
 
 
     @media screen and (min-width: 480px) {
-      top: -2%;
-      left: 2%;
+      top: 0%;
+      left: 0%;
       transform: translate(-50% -50%);
   
       width: 450px;
@@ -81,7 +81,7 @@
     }
     @media screen and (min-width: 768px) {
       top: 0%;
-      left: 20%;
+      left: 0%;
       transform: translate(-50% -50%);
   
       width: 450px;
