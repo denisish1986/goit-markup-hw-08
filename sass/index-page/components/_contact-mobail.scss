@@ -1,0 +1,23 @@
+.mobail-menu-contact {
+
+
+    .mobail-menu-contact__item{
+      margin-top: 302px;
+    }
+  
+  .mobail-menu-contact__item + .item{
+    margin-top: 32px;
+  }
+  
+    &__link-tel {
+      color: var(--accent-text-color);
+      @include font(34px, 500, 40px);
+      letter-spacing: 0.02em;
+    }
+    &__link-mail {
+      color: var(--primary-text-color);
+      @include font(24px, 500, 28px);
+  
+      letter-spacing: 0.02em;
+    }
+  }

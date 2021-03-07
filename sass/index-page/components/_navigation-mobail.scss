@@ -1,0 +1,22 @@
+.mobail-navigation {
+
+    :not(:first-child){
+      margin-top: 36px;
+    }
+   
+    &__link{
+      @include font(40px, 500, 47px);
+      color: var(--sometimes-black-text-color);
+      letter-spacing: 0.02em;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+    
+      &:hover,
+      &:focus{
+        color: var(--accent-text-color);
+      }
+    }
+      
+    
+  }
+  
+  
