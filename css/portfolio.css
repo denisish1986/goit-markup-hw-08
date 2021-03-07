@@ -144,15 +144,10 @@ body {
     margin-top: 50px;
   }
 }
-.portfolio-list .portfolio-list__item:hover,
-.portfolio-list .portfolio-list__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio-list .portfolio-list__item:hover .portfolio-text-container,
-.portfolio-list .portfolio-list__item:focus .portfolio-text-container {
+.portfolio-list .portfolio-list__item:hover .portfolio-text-container {
   transform: translateY(0);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .portfolio-list__item:not(:first-child) {
     margin-top: 30px;
   }
@@ -169,6 +164,13 @@ body {
     width: calc((100%-2 * 30) / 2);
     margin: 15px;
     max-width: 354px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .portfolio-list__item {
+    max-width: 370px;
+    min-height: 404px;
   }
 }
 .portfolio-list__item__link {
@@ -195,8 +197,20 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--portfolio-background-stikker);
-  transform: translateY(100%);
+  transform: translateY(0);
   transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list__item .portfolio-link-overlay .portfolio-text-container {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .portfolio-list__item .portfolio-link-overlay .portfolio-text-container {
+    min-height: 294px;
+    padding: 63px 24px;
+  }
 }
 .portfolio-list__item .portfolio-link-overlay .portfolio-text-container .portfolio-link-overlay-text {
   width: 402px;
@@ -212,17 +226,17 @@ body {
   left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 77px 24px;
   color: var(--sometimes-white-text-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
   .portfolio-list__item .portfolio-link-overlay .portfolio-text-container .portfolio-link-overlay-text {
-    padding: 49px 24px;
+    padding: 63px 24px;
+    max-height: 168px;
+    width: 322px;
   }
 }
 .portfolio-list__item .container-title-item-examples {
   width: 100%;
-  height: 100%;
   padding: 20px 24px;
 }
 .portfolio-list__item .container-title-item-examples .examples-project-title {

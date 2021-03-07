@@ -33,15 +33,21 @@
     margin-top: 50px;
   }
 
-  .portfolio-list__item:hover,
-  .portfolio-list__item:focus {
-    .portfolio-text-container {
+  .portfolio-list__item:hover{
+    .portfolio-text-container{
       transform: translateY(0);
     }
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  @media screen and (max-width: 479px) {
+
+  // .portfolio-list__item:hover,
+  // .portfolio-list__item:focus {
+  //   .portfolio-text-container {
+  //     transform: translateY(0);
+  //   }
+  //   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  //     1px 4px 6px rgba(0, 0, 0, 0.16);
+  // }
+  @media screen and (max-width: 767px) {
     &__item:not(:first-child) {
       margin-top: 30px;
     }
@@ -50,19 +56,26 @@
     position: relative;
     min-width: 260px;
     width: 100%;
+   
     border: 1px solid var(--border-color-portfolio);
     transition: box-shadow var(--transition-duration)
       var(--transition-timing-function);
       
 
-    @media screen and (min-width: 480px) {
-    }
+ 
 
     @media screen and (min-width: 768px) {
       width: calc((100%-2 * 30) / 2);
       margin: 15px;
       max-width: 354px;
+     height: 100%;
+
     }
+    @media screen and (min-width: 1300px) {
+      max-width: 370px;
+      min-height: 404px;
+    }
+
 
     &__link {
       position: absolute;
@@ -70,14 +83,21 @@
       left: 0;
       width: 100%;
       max-width: 450px;
+   
     }
 
     .portfolio-link-overlay {
       position: relative;
       width: 100%;
+
+    
+
+
       .image-examples {
         margin: 0px;
         width: 100%;
+
+
       }
       .portfolio-text-container {
         display: flex;
@@ -90,9 +110,22 @@
         height: 100%;
         background-color: var(--portfolio-background-stikker);
 
-        transform: translateY(100%);
+        transform: translateY(0);
         transition: transform var(--transition-duration)
           var(--transition-timing-function);
+
+          
+          @media screen and (min-width: 768px) {
+           width:354px;
+           height: 294px; 
+          //  padding: 63px 24px;
+          }
+
+          @media screen and (min-width: 1300px) {
+            min-height: 294px;
+            padding: 63px 24px;
+          }
+
 
         .portfolio-link-overlay-text {
           width: 402px;
@@ -108,17 +141,26 @@
           left: 0px;
           margin-top: 0px;
           margin-bottom: 0px;
-          padding: 77px 24px;
+          // padding: 77px 24px;
           color: var(--sometimes-white-text-color);
           @media screen and (min-width: 768px) {
-            padding: 49px 24px;
+            // padding: 60px 24px;
+            
+          
+
+          }
+          @media screen and(min-width: 1300px) {
+          padding: 63px 24px;
+          max-height: 168px;
+          width: 322px;
+          
+
           }
         }
       }
     }
     .container-title-item-examples {
       width: 100%;
-      height: 100%;
       padding: 20px 24px;
 
       .examples-project-title {
