@@ -3,13 +3,14 @@
 @import "./utils/variables";
 
 // BASE
+@import "./base/container";
 @import "./base/common";
 @import "./base/html-base";
 // LAYOUT
 @import "./index-page/layout/header";
 @import "./index-page/layout/backdrop";
 @import "./index-page/layout/team";
-@import "./index-page/layout/container";
+
 @import "./index-page/layout/modal-window";
 @import "./index-page/layout/hero";
 @import "./index-page/layout/footer";
@@ -17,6 +18,8 @@
 @import "./index-page/layout/costumers";
 @import "./index-page/layout/details";
 @import "./index-page/layout/menu-mobail";
+@import "./index-page/layout/portfolio-products";
+
 
 
 
@@ -24,7 +27,7 @@
 @import "./index-page/components/_header-navi-button-mobile";
 @import "./index-page/components/button-footer-subscribe";
 @import "./index-page/components/button-hero";
-@import "./index-page/components/current";
+
 @import "./index-page/components/logo-webstudio";
 @import "./index-page/components/modal-button-close";
 @import "./index-page/components/modal-button-submit";
@@ -34,7 +37,9 @@
 @import "./index-page/components/close-btn-mobail";
 @import "./index-page/components/navigation-mobail";
 @import "./index-page/components/contact-mobail";
-@import  "./index-page/components/sosiaal-mobail"
+@import  "./index-page/components/sosiaal-mobail";
+@import  "./index-page/components/portfolio-examples";
+@import "./index-page/components/portfolio-product-button";
 
 
 
