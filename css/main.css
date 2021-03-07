@@ -690,7 +690,7 @@ body {
   .section-hero {
     width: 100%;
     max-width: 1199px;
-    background-image: var(--overlay-gradient), url("./images/hero-x1@768.jpg");
+    background-image: var(--overlay-gradient), url("../images/hero-x1@768.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -977,15 +977,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .specification-list {
-    position: relative;
     display: flex;
-    justify-content: center;
-    min-width: 500px;
-    margin-top: 50px;
-    padding: 0px;
+    margin: -15px;
   }
-  .specification-list :not(:last-child) {
-    margin-right: 30px;
+  .specification-list__item {
+    position: relative;
+    margin: 15px;
+    padding-top: 50px;
   }
   .specification-list .specification-description {
     position: absolute;
