@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
+
+
   
 
   @media screen and(min-width:1200px) {
@@ -17,6 +19,7 @@
 }
 .hero-container{
   text-align: center;
+
 }
 
 .hero-title {
@@ -27,11 +30,13 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+@media screen and (min-width: 768px) {
+
+}
  @media screen and (min-width: 1200px) {
   letter-spacing: 0.06em;
    @include font (44px, 900, 60px);
-   width: 666px;
-   margin-left: 300px;
+
   
  }
 }
