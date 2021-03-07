@@ -15,7 +15,9 @@
   }
 
 }
-
+.hero-container{
+  text-align: center;
+}
 
 .hero-title {
   @include font(26px, 900, 42px);
@@ -28,10 +30,9 @@
  @media screen and (min-width: 1200px) {
   letter-spacing: 0.06em;
    @include font (44px, 900, 60px);
-  width: 695px;
+   width: 666px;
+   margin-left: 300px;
   
-
-   
  }
 }
 

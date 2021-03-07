@@ -717,6 +717,10 @@ body {
   }
 }
 
+.hero-container {
+  text-align: center;
+}
+
 .hero-title {
   font-size: 26px;
   font-weight: 900;
@@ -734,7 +738,8 @@ body {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.3636363636;
-    width: 695px;
+    width: 666px;
+    margin-left: 300px;
   }
 }
 
