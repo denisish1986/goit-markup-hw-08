@@ -85,35 +85,6 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-x1@480.jpg");
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url("../images/hero-x2@480.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .overlay {
-    width: 100%;
-    max-width: 1199px;
-    background-image: var(--overlay-gradient), url("../images/hero-x1@768.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url("../images/hero-x2@768.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .overlay {
-    max-width: 1600px;
-    height: 600px;
-    background-image: var(--overlay-gradient), url("../images/hero-x1@1200.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url("../images/hero-x2@1200.jpg");
-  }
-}
 
 .details-section,
 .section-specification,
@@ -467,19 +438,19 @@ body {
   min-width: 448px;
   max-height: 40px;
 }
-@media screen and (max-width: 1299px) and (min-width: 1px) {
+@media screen and (max-width: 1199px) and (min-width: 1px) {
   .modal-window__title {
     min-width: 370px;
     max-height: 60px;
   }
 }
-@media screen and (max-width: 1299px) and (min-width: 480px) {
+@media screen and (max-width: 1199px) and (min-width: 480px) {
   .modal-window__title {
     min-width: 370px;
     max-height: 60px;
   }
 }
-@media screen and (max-width: 1299px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .modal-window__title {
     min-width: 370px;
     max-height: 60px;
@@ -653,7 +624,7 @@ body {
     min-width: 346px;
   }
 }
-@media screen and (min-width: 1299px) and (min-width: 1px) {
+@media screen and (min-width: 1199px) and (min-width: 1px) {
   .modal-window .form-fild-container .form-fild__polycy-label {
     min-width: 380px;
     font-size: 12px;
@@ -663,7 +634,7 @@ body {
     text-align: start;
   }
 }
-@media screen and (min-width: 1299px) and (min-width: 480px) {
+@media screen and (min-width: 1199px) and (min-width: 480px) {
   .modal-window .form-fild-container .form-fild__polycy-label {
     min-width: 380px;
     font-size: 12px;
@@ -673,7 +644,7 @@ body {
     text-align: start;
   }
 }
-@media screen and (min-width: 1299px) and (min-width: 768px) {
+@media screen and (min-width: 1199px) and (min-width: 768px) {
   .modal-window .form-fild-container .form-fild__polycy-label {
     min-width: 380px;
     font-size: 12px;
@@ -683,19 +654,19 @@ body {
     text-align: start;
   }
 }
-@media screen and (max-width: 1299px) and (min-width: 1px) {
+@media screen and (max-width: 1199px) and (min-width: 1px) {
   .modal-window .form-fild-container {
     text-align: start;
     min-width: 370px;
   }
 }
-@media screen and (max-width: 1299px) and (min-width: 480px) {
+@media screen and (max-width: 1199px) and (min-width: 480px) {
   .modal-window .form-fild-container {
     text-align: start;
     min-width: 370px;
   }
 }
-@media screen and (max-width: 1299px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .modal-window .form-fild-container {
     text-align: start;
     min-width: 370px;
@@ -708,12 +679,37 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  background-image: url("../images/hero-x1@480.jpg");
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url("../images/hero-x2@480.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-hero {
+    width: 100%;
+    max-width: 1199px;
+    background-image: var(--overlay-gradient), url("./images/hero-x1@768.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url("../images/hero-x2@768.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     display: flex;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    width: 100%;
+    max-width: 1600px;
+    height: 600px;
+    background-image: var(--overlay-gradient), url("../images/hero-x1@1200.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url("../images/hero-x2@1200.jpg");
   }
 }
 
@@ -962,7 +958,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .container-specification {
     display: flex;
     flex-direction: column;
@@ -979,7 +975,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .specification-list {
     position: relative;
     display: flex;
@@ -1257,7 +1253,7 @@ body {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .seciton-products {
     width: 1600px;
     padding-top: 94px;
@@ -1469,7 +1465,7 @@ body {
     height: 50px;
   }
 }
-@media screen and (max-width: 1299px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .submit-button-container .submit-button-container {
     width: 370px;
     height: 50px;
@@ -1557,12 +1553,12 @@ body {
   height: 20px;
   fill: inherit;
 }
-@media screen and (max-width: 1299px) and (min-width: 480px) {
+@media screen and (max-width: 1199px) and (min-width: 480px) {
   .footer-sosiaal-links-container {
     position: sticky;
   }
 }
-@media screen and (max-width: 1299px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .footer-sosiaal-links-container {
     position: absolute;
     top: 0px;
@@ -1867,7 +1863,7 @@ body {
   .portfolio-product-list {
     justify-content: center;
     min-width: 768px;
-    max-width: 1300px;
+    max-width: 1200px;
   }
 }
 @media screen and (min-width: 1200px) {

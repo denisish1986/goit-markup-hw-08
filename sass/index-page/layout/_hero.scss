@@ -4,21 +4,51 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
-
+background-image: url("../images/hero-x1@480.jpg");
   
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  background-image: url("../images/hero-x2@480.jpg");
 
-  @media screen and(min-width:1200px) {
-    display: flex;
+  @media screen and(min-width:768px) {
+    width: 100%;
+    max-width: 1199px;
+    background-image: var(--overlay-gradient),
+      url("./images/hero-x1@768.jpg");
   
-    padding-top: 200px;
-    padding-bottom: 200px;
-  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/hero-x2@768.jpg");
+    }
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 100%;
+    max: width 1600px;
+    height: 600px;
+    background-image: var(--overlay-gradient),
+      url("../images/hero-x1@1200.jpg");
+  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/hero-x2@1200.jpg");
+    }
+  }
+
+}
+
+
+  
+
+  
 
 }
 .hero-container{
   text-align: center;
+  
 
 }
 
