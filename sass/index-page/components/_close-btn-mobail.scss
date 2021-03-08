@@ -11,6 +11,13 @@
     border-radius: 50%;
     background-color: var(--sometimes-white-text-color);
     cursor: pointer;
+    @media screen and (max-width: 450px) {
+      @media screen and (min-width: 200px) {
+       
+       
+        transform: scale(1.5);
+      }
+    }
     
     fill: var(--sometimes-black-text-color);
     transition: fill var(--transition-duration) var(--transition-timing-function);

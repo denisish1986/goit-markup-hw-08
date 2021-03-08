@@ -1,21 +1,39 @@
 .mobail-sosiaal {
 
     display: flex;
+  width: 100%;
+ 
+
+ 
   
   &__item{
+    
     margin-top: 64px;
+    width: 100%;
+
   }
-  
-  
-  
-  
-    &__link {
+   &__link {
+
+    width: 100%;
      
      padding: 10px;
       color: var(--accent-text-color);
       @include font(18px, 500, 22px);
       letter-spacing: 0.02em;
       border-right: 1px solid var(--border-sosiaal-mobail);
+
+
+
     }
+    @media screen and (max-width: 450px) {
+      @media screen and (min-width: 200px) {
+       
+        display: flex;
+        justify-content: center;
+        transform: scale(0.6);
+      }
+    }
+   
   }
+
   

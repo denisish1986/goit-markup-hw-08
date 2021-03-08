@@ -1,5 +1,12 @@
 .mobail-menu-contact {
-
+  @media screen and (max-width: 450px) {
+    @media screen and (min-width: 200px) {
+     
+    justify-content: center;
+      
+      transform: scale(0.6);
+    }
+  }
 
     .mobail-menu-contact__item{
       margin-top: 302px;
