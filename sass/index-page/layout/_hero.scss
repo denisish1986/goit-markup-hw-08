@@ -51,6 +51,11 @@
 }
 .hero-container{
   text-align: center;
+
+@media screen and (min-width: 1200px) {
+  
+
+}
   
 
 }
@@ -68,10 +73,10 @@
 }
  @media screen and (min-width: 1200px) {
    display: flex;
-   align-items: flex-start;
   letter-spacing: 0.06em;
    @include font (44px, 900, 60px);
-   max-width: 1600px;
+   text-align: center;
+  
  
   
 

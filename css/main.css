@@ -725,7 +725,6 @@ body {
 .hero-container {
   text-align: center;
 }
-
 .hero-title {
   font-size: 26px;
   font-weight: 900;
@@ -740,12 +739,11 @@ body {
 @media screen and (min-width: 1200px) {
   .hero-title {
     display: flex;
-    align-items: flex-start;
     letter-spacing: 0.06em;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.3636363636;
-    max-width: 1600px;
+    text-align: center;
   }
 }
 
