@@ -11,7 +11,6 @@
 
 .team-section-list {
   margin-top: 30px;
-
   @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +33,7 @@
     @media screen and(min-width:768px) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
+    
     }
 
     @media screen and(min-width:1200px) {

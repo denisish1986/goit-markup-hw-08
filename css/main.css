@@ -687,7 +687,7 @@ body {
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../images/hero-x1@480");
+  background-image: url("../images/hero-x1@480.jpg");
   background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -709,6 +709,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
     background-image: url("../images/hero-x1@1200.jpg");
@@ -734,12 +736,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .hero-title {
-    padding-left: 118px;
-    padding-right: 118px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {

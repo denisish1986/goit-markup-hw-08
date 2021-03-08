@@ -1,6 +1,6 @@
 .section-hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+ padding-top: 118px;
+ padding-bottom: 118px;
   width: 100%;
   max-width: 768px;
   height: 400px;
@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: 
-    url("../images/hero-x1@480");
+    url("../images/hero-x1@480.jpg");
   background-size: cover;
 
 
@@ -34,6 +34,8 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  padding-top: 200px;
+  padding-bottom: 200px;
   max-width: 1600px;
   height: 600px;
   background-image:
@@ -47,12 +49,6 @@
 }
 
 }
-
-
-
-
-
-
 .hero-container{
   text-align: center;
   
@@ -68,8 +64,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 @media screen and (min-width: 768px) {
-padding-left: 118px;
-padding-right: 118px;
+
 }
  @media screen and (min-width: 1200px) {
    display: flex;
@@ -77,6 +72,7 @@ padding-right: 118px;
   letter-spacing: 0.06em;
    @include font (44px, 900, 60px);
    max-width: 1600px;
+ 
   
 
 
