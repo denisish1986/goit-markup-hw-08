@@ -98,26 +98,22 @@ letter-spacing: 0.02em;
     &__item {
       display: flex;
       align-items: center;
+transition: color var(--transition-duration) var(--transition-timing-function),
+fill var(--transition-duration)var(--transition-timing-function);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-text-color);
+        fill: var(--accent-text-color);
+      }
     }
 
     &__link {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-
-      color: var(--primary-text-color);
-      fill: var(--primary-text-color);
-      letter-spacing: 0.02em;
-      transition: color var(--transition-duration)
-          var(--transition-timing-function),
-        fill var(--transition-duration) var(--transition-timing-function);
-
-      @include font(12px, 500, 14px);
-      &:hover,
-      &:focus {
-        color: var(--accent-text-color);
-        fill: var(--accent-text-color);
-      }
+@include font(12px, 500, 14px);
+     
     }
     &__icon {
       display: flex;

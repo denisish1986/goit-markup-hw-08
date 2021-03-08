@@ -218,22 +218,19 @@ body {
   .contact-link-list__item {
     display: flex;
     align-items: center;
+    transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
+  }
+  .contact-link-list__item:hover, .contact-link-list__item:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
   }
   .contact-link-list__link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: var(--primary-text-color);
-    fill: var(--primary-text-color);
-    letter-spacing: 0.02em;
-    transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
     font-size: 12px;
     font-weight: 500;
     line-height: 1.1666666667;
-  }
-  .contact-link-list__link:hover, .contact-link-list__link:focus {
-    color: var(--accent-text-color);
-    fill: var(--accent-text-color);
   }
   .contact-link-list__icon {
     display: flex;
@@ -704,6 +701,8 @@ body {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: url("../images/hero-x2@1200.jpg");
+    padding-left: 204px;
+    padding-right: px;
   }
 }
 
