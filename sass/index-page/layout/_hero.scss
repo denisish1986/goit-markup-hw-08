@@ -1,49 +1,56 @@
 .section-hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  width: 100%;
+  max-width: 768px;
+  height: 400px;
   display: flex;
   justify-content: center;
   text-align: center;
-background-image: url("../images/hero-x1@480.jpg");
+
   
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: 
+    url("../images/hero-x1@480");
+  background-size: cover;
+
+
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   background-image: url("../images/hero-x2@480.jpg");
-
-  @media screen and(min-width:768px) {
-    width: 100%;
-    max-width: 1199px;
-    background-image: var(--overlay-gradient),
-      url("../images/hero-x1@768.jpg");
-  
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url("../images/hero-x2@768.jpg");
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    width: 100%;
-    max-width: 1600px;
-    height: 600px;
-    background-image: var(--overlay-gradient),
-      url("../images/hero-x1@1200.jpg");
-  
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url("../images/hero-x2@1200.jpg");
-    }
-  }
-@media screen and (min-width: 1200px) {
-  padding-top: 200px;
+}
+@media screen and(min-width:768px) {
   width: 100%;
+  max-width: 1199px;
+  background-image:
+    url("../images/hero-x1@768.jpg");
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/hero-x2@768.jpg");
+  }
 }
+@media screen and (min-width: 1200px) {
+  max-width: 1600px;
+  height: 600px;
+  background-image:
+    url("../images/hero-x1@1200.jpg");
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/hero-x2@1200.jpg");
+  }
 }
 
 }
+
+
+
+
 
 
 .hero-container{
@@ -65,10 +72,14 @@ padding-left: 118px;
 padding-right: 118px;
 }
  @media screen and (min-width: 1200px) {
+   display: flex;
+   align-items: flex-start;
   letter-spacing: 0.06em;
    @include font (44px, 900, 60px);
-padding-left: 120px;
-padding-right: 120px;  
+   max-width: 1600px;
+  
+
+
  }
 }
 

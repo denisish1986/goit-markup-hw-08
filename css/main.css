@@ -28,22 +28,24 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  min-width: 260px;
   padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100%;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    max-width: 1200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -82,7 +84,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-x1@480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .details-section,
@@ -677,46 +679,44 @@ body {
 .section-hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  width: 100%;
+  max-width: 768px;
+  height: 400px;
   display: flex;
   justify-content: center;
   text-align: center;
-  background-image: url("../images/hero-x1@480.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/hero-x1@480");
+  background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-hero {
     background-image: url("../images/hero-x2@480.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-hero {
     width: 100%;
     max-width: 1199px;
-    background-image: var(--overlay-gradient), url("../images/hero-x1@768.jpg");
+    background-image: url("../images/hero-x1@768.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: url("../images/hero-x2@768.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section-hero {
-    display: flex;
-    width: 100%;
     max-width: 1600px;
     height: 600px;
-    background-image: var(--overlay-gradient), url("../images/hero-x1@1200.jpg");
+    background-image: url("../images/hero-x1@1200.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: url("../images/hero-x2@1200.jpg");
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section-hero {
-    padding-top: 200px;
-    width: 100%;
   }
 }
 
@@ -743,12 +743,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
+    display: flex;
+    align-items: flex-start;
     letter-spacing: 0.06em;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.3636363636;
-    padding-left: 120px;
-    padding-right: 120px;
+    max-width: 1600px;
   }
 }
 
