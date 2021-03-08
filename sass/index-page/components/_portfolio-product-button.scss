@@ -3,8 +3,14 @@
 .portfolio-product-list {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 479px) {
+    @media screen and (min-width: 1px) {
+      margin-top: -10px;
+    }
+  }
   
- 
+
  
 
   @media screen and(min-width: 480px) {
@@ -61,4 +67,11 @@ max-width: 1600px;
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
   }
+
+  @media screen and (max-width: 479px) {
+    @media screen and( min-width: 1px) {
+      margin: 10px;
+    }
+  }
+ 
 }
