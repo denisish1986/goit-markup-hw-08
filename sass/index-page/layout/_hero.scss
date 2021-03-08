@@ -37,7 +37,9 @@ background-image: url("../images/hero-x1@480.jpg");
       background-image: url("../images/hero-x2@1200.jpg");
     }
   }
-
+@media screen and (min-width: 1200px) {
+  padding-top: 200px;
+}
 }
 
 }
