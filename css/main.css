@@ -611,16 +611,7 @@ body {
   letter-spacing: 0.03em;
   top: 0%;
   left: 0%;
-}
-@media screen and (min-width: 1px) {
-  .modal-window .form-fild-container .form-fild__polycy-label a {
-    min-width: 346px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .modal-window .form-fild-container .form-fild__polycy-label a {
-    min-width: 346px;
-  }
+  min-width: 346px;
 }
 @media screen and (min-width: 768px) {
   .modal-window .form-fild-container .form-fild__polycy-label a {
@@ -1884,6 +1875,11 @@ body {
 .portfolio-product-list {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-product-list {
+    justify-content: center;
+  }
 }
 .portfolio-product-list .portfolio-product__item {
   margin-top: 21px;

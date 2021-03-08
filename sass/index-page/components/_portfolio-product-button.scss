@@ -3,6 +3,10 @@
 .portfolio-product-list {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
   
   .portfolio-product__item {
     &:not(:last-child) {

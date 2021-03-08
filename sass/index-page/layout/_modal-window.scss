@@ -227,14 +227,9 @@
           letter-spacing: 0.03em;
           top: 0%;
           left: 0%;
-  
-          @media screen and (min-width: 1px) {
-            min-width: 346px;
-          }
-  
-          @media screen and (min-width: 480px) {
-            min-width: 346px;
-          }
+          min-width: 346px;
+         
+         
   
           @media screen and (min-width: 768px) {
             min-width: 346px;
@@ -271,7 +266,7 @@
         }
       }
     }
-  
+ 
     @media screen and (max-width: 1199px) {
       @media screen and (min-width: 1px) {
         text-align: start;
