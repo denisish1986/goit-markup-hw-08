@@ -1873,6 +1873,11 @@ body {
   letter-spacing: 0.06em;
   color: var(--titel-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item .container-title-item-examples .examples-project-title {
+    width: 322px;
+  }
+}
 .portfolio-list__item .container-title-item-examples .description-item {
   font-weight: 400;
   font-size: 16px;

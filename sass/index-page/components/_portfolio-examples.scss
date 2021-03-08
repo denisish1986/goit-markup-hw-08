@@ -159,8 +159,10 @@
       }
     }
     .container-title-item-examples {
+     
       padding: 20px 24px;
       text-align: left;
+      // width: 322px;
     
 
     
@@ -174,6 +176,10 @@
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--titel-text-color);
+        @media screen and(min-width: 1200px) {
+          width: 322px;
+        }
+       
         
       }
       .description-item {
