@@ -76,7 +76,6 @@
 
 .overlay {
   width: 100%;
-  max-width: 767px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -715,6 +714,7 @@ body {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     padding-top: 200px;
+    width: 100%;
   }
 }
 
