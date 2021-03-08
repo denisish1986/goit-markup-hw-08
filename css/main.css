@@ -128,7 +128,7 @@ body {
 
 .header-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   width: 100%;
 }
@@ -145,10 +145,11 @@ body {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .header-navigation {
     display: flex;
     align-items: center;
+    margin-left: 170px;
     width: 100%;
   }
 }
@@ -242,12 +243,13 @@ body {
     fill: var(inherit);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .contact-link-list {
     display: flex;
     width: 100%;
     align-items: baseline;
     justify-content: flex-end;
+    margin-right: 170px;
   }
 }
 @media screen and (max-width: 1199px) {
