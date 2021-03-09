@@ -1603,7 +1603,8 @@ body {
 }
 @media screen and (max-width: 479px) {
   .modal-button-close {
-    position: absolute;
+    top: 16px;
+    right: 8px;
   }
 }
 
