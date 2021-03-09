@@ -53,7 +53,10 @@ justify-content: center;
       margin: -15px;
     }
     &__item {
-      width:450px;
+   max-width: 450px;
+   min-width: 300px;
+   width: 100%;
+
 
       @media screen and (max-width: 1199px) {
         display: flex;
