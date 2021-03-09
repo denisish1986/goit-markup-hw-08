@@ -7,15 +7,34 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    min-width: 1600px;
+  }
+
 }
 
 .team-section-list {
   margin-top: 30px;
+ 
+
   @media screen and(min-width:768px) {
     display: flex;
+    
     flex-wrap: wrap;
     margin: -15px;
     margin-top: 30px;
+    width: 768px;
+  
+  }
+
+  @media screen and( min-width: 1200px) {
+  margin: -15px;
+  justify-content: center;
+ width: 100%;
+ max-width: 1600px;
+ padding-top: 50px;
+
   }
 
   &__item {
@@ -33,12 +52,16 @@
     @media screen and(min-width:768px) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
-    
+      max-width: 354px;
+  
     }
 
     @media screen and(min-width:1200px) {
       width: calc((100% - 4 * 30px) / 4);
       margin: 15px;
+      max-width: 270px;
+    
+     
     }
   }
 }

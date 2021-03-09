@@ -3,6 +3,7 @@
     margin-right: auto;
     width: 100%;
     padding-top: 60px;
+ 
   
     @media screen and (min-width: 480px) {
       min-width: 260px;
@@ -25,7 +26,11 @@
   .products {
     align-items: center;
     width: 100%;
-    
+
+   
+   min-width: 768px;
+  
+  
     @media screen and (min-width: 480px) {
       width: 480px;
     }

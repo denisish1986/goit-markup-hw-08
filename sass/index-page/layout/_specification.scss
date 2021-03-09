@@ -24,6 +24,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
+    max-width: 1600px;
   }
 }
 
@@ -35,13 +36,15 @@
     display: none;
   }
   @media screen and (min-width: 1200px) {
+    justify-content: center;
     display: flex;
+    max-width: 1600px;
   margin: -15px;
+  margin-top: 50px;
 
   &__item{
     position: relative;
     margin: 15px;
-    padding-top: 50px;
   }
  
     .specification-description {

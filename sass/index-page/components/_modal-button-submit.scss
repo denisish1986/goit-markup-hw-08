@@ -30,39 +30,14 @@
     
     }
 
-
-    @media screen and (min-width: 1px) {
-      max-width: 200px;
-      height: 50px;
-    }
-
-    @media screen and (min-width: 480px) {
-      max-width: 200px;
-      height: 50px;
-    }
-
-
-@media screen and (min-width: 768px) {
+  }
   max-width: 200px;
-  height: 50px;
-}
-  }
-
-
-
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 1199px) {
-   @media screen and (min-width: 768px) {
-  
-    .submit-button-container{
-      width: 370px;
-      height: 50px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+   
+    margin-left: auto;
+  margin-right: auto;
   }
-  }
-
-
-
 }
 

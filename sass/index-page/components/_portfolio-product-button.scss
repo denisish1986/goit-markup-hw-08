@@ -3,7 +3,9 @@
 .portfolio-product-list {
   display: flex;
   flex-wrap: wrap;
-
+@media screen and (min-width: 768px) {
+  justify-content: center;
+}
   @media screen and (min-width: 1200px) {
     justify-content: center;
   }

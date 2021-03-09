@@ -21,6 +21,11 @@
     --border-color-portfolio: #eeeeee;
     --border-color-for-header: #ececec;
     --costumers-color: #afb1b8;
+    --overlay-gradient:linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    );
   }
 
   @mixin font ($fs:15px, $fw:400, $lh:24px){
