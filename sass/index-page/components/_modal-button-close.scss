@@ -25,5 +25,8 @@
     height: 11px;
     fill: inherit;
   }
+  @media screen and (max-width: 479px) {
+    position: absolute;
+  }
 }
 
