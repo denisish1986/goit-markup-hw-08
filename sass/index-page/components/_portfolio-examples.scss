@@ -30,8 +30,10 @@
 
   @media screen and (min-width: 1200px) { 
     justify-content: center;
-    max-width: 1600px;
-    width: 1200px;
+   width:100%;
+   max-width: 1600px;
+   margin: -15px;
+    
     margin-top: 50px;
   }
 
@@ -70,8 +72,13 @@
 
     }
     @media screen and (min-width: 1200px) {
-     
+      width: calc((100%-2 * 30) / 3);
+      margin: 15px;
+      max-width: 370px;
+    
+
     }
+   
 
 
     &__link {
