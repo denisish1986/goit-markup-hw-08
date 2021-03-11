@@ -23,6 +23,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  min-width: 350px;
 
 
 
@@ -119,7 +120,7 @@
 .costumers-section-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  widows: 480px;
+  min-width: 350px;
 
   text-align: center;
   letter-spacing: 0.03em;
