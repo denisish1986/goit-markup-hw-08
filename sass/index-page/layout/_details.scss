@@ -38,6 +38,8 @@
 display: flex;
 flex-wrap:wrap;
 justify-content: center;
+
+
   @media screen and(max-width: 479px) {
     & {
       :not(:first-child) {
@@ -72,12 +74,17 @@ justify-content: center;
       }
     }
   }
-
- 
   &__item {
+    text-align: start;
+@media screen and (min-width: 480px) {
+  width: 450px;
+  text-align: start;
+}
+
     @media screen and (min-width: 1200px) {
       width: 270px;
     }
+
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
